@@ -1,0 +1,51 @@
+#title{
+    background-color: blueviolet;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    padding: 9px 0;
+}
+#input-text{
+    width: 85%;
+    height: 34px;
+}
+#button-adicionar{
+    background-color: gray;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border: none;
+}
+#container-tasks{
+    margin: 20px 0;
+}
+.container-task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-task{
+    width: 95%;
+    border-bottom: 1px solid gainsboro ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+}
+.content-task-checkbox-title{
+    margin-left: 10px;
+   display: flex;
+   justify-content: baseline;
+}
+.checkbox{
+    width: 15px;
+    height: 15px;
+}
+.task-title{
+    font-size: 15px;
+}
+.button-delete{
+    width:40px;
+    height:40px
+}

@@ -1,6 +1,6 @@
 import express from "express"
 import mongoose from "mongoose"
-//import mongoose from "mongoose"
+import cors from "cors"
 import Task from "./models/Todo.js"
 const MONGODB_URI = "mongodb://localhost:27017/task-app"
 
@@ -13,6 +13,7 @@ mongoose.connect(MONGODB_URI)
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 app.get("/todos",async(req,res)=>{
   try{
