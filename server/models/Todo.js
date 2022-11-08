@@ -4,7 +4,7 @@ const newTask = Schema(
   {
     title: { type: String, required: [true, "Title is required"] },
     completed: { type: Boolean, default: false },
-    user: {type: ObjectId}
+    userId: {type: Schema.Types.ObjectId, ref:'User'}
   },
   { timestamps: true }
 );
